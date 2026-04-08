@@ -36,5 +36,8 @@ public Producto buscarPorId(Integer id){
 public List<Producto> buscarPorDisponibilidad(Boolean disponible){
     return productoRepository.buscarPorDisponibilidad(disponible);
 }
+    public Producto actualiarPrecio(Integer id,Double precio){
+    return productoRepository.actualizarPrecio(id, precio);
+}
     
 }
