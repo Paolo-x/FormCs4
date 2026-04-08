@@ -55,6 +55,16 @@ public class ProductoRepository {
         return null;
     }
 
+    public Producto actualizarPrecio(Integer id,Double precio){
+    for(Producto producto : listaProductos){
+        if(producto.getId().equals(id)){
+            producto.setPrecio(precio);
+            return producto;
+        }
+    }
+    return null;
+}
+
 
 
     
